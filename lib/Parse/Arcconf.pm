@@ -207,7 +207,7 @@ sub parse_config_fh
 			$ctrl->{'logical drive'}{$current_logical_drive}{$1} = $2;
 		} elsif ($line =~ /^\s+-+$/) {
 			my $cat = <$fh>;
-                        $cat =~ s/^\s+(\S.*\S+)\s+/\1/;
+                        $cat =~ s/^\s+(\S.*\S+)\s+/$1/;
 			chomp $cat;
 			LEVEL5: while($line = <$fh>) {
 				chomp $line;
