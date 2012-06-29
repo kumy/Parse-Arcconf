@@ -25,6 +25,9 @@ perldoc command.
 
 You can also look for information at:
 
+    Source Code
+        https://github.com/kumy/Parse-Arcconf
+
     RT, CPAN's request tracker
         http://rt.cpan.org/NoAuth/Bugs.html?Dist=Parse-Arcconf
 

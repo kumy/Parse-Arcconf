@@ -274,6 +274,10 @@ You can also look for information at:
 
 =over 4
 
+=item * Source code
+
+L<https://github.com/kumy/Parse-Arcconf>
+
 =item * RT: CPAN's request tracker
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Parse-Arcconf>
