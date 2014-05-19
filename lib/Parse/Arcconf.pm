@@ -197,7 +197,7 @@ sub parse_config_fh
 
     next if(!defined($current_controller));
 
-    if($line =~ /^Logical drive information/) {
+    if($line =~ /^Logical drive information/ or $line =~ /^Logical device information/) {
 	LEVEL4: while($line = <$fh>) {
 		chomp $line;
 
@@ -217,7 +217,7 @@ sub parse_config_fh
 	                  	} elsif ($line =~ /^\S+.*\w\s+(\d+)$/) {
                                         $current_logical_drive = $1;
 	                  		last LEVEL5;
-	                  	} elsif ($line =~ /^$/) {
+	                  	} elsif ($line =~ /^-+$/) {
 	                  		last LEVEL4;
 	                  	} elsif ($line =~ /^\s+-+$/) {
 					next;
